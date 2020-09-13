@@ -5,7 +5,7 @@ const arrayLiteral = [];
 
 // delegation
 
-const test1 = arrayLiteral.__proto__ === _._;
+const test1 = arrayLiteral.__proto__ === Array.prototype;
 console.assert(test1, '1. arrays delegate to ...');
 
 const test2 = Array._._ === Object._;
